@@ -1,0 +1,59 @@
+main h2 {
+	color: #f19e24;
+	text-align: center;
+}
+main aside h2{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+main aside.columna{
+	width: 100%;
+}
+main aside section.columna:last-of-type{
+	width: 100%;
+}
+main aside section ul{
+	padding: 8px;
+	border: 1px solid #f0f0e8;
+	margin: 4px;
+}
+main aside section:not( .precios ) ul:hover{
+	border-color: #ff980d;
+	background-color: rgba(255,152,13,0.1);
+}
+main aside section:not( .precios ) ul li:hover{
+	color: #ffffff;
+	cursor: pointer;
+
+	background-color: rgba(255,152,13,0.8);
+}
+
+main aside section li{
+	padding: 8px;
+}
+main aside section li span{
+	font-weight: 700;
+	font-size: 13px;
+}
+
+main aside section.marcas ul{
+	padding-bottom: 106px;
+}
+main aside section.precios ul{
+	padding-bottom: 8px;
+}
+  
+@media all and (min-width: 640px){
+	main aside.columna{
+		width: 25%;
+	}
+	main aside section.columna{
+		width: 100%;
+	}	
+}
+@media all and  (min-width: 1024px ){
+	main aside section.marcas ul{
+		padding-bottom: 8px;
+	}
+}

@@ -1,0 +1,216 @@
+main article.columna{
+	width: 100%;
+}
+main article li.columna{
+	width: 100%;
+}
+
+main article li .producto{
+	position: relative;
+	border: 1px solid #f0f0e8;
+	margin: 0 8px 16px 8px;	
+}
+main article li .producto .contenido{
+	padding-bottom: 16px;
+}
+
+main article li .producto img.destacada{
+	position: absolute;
+	top: 0;
+	right: 0;	
+}
+main article li .producto img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+main article li .producto .precio,
+main article li .producto .titulo{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 16px 0;
+}
+main article li .producto .precio{
+	color: #f19e24;
+}
+main article .articulos .producto .titulo{
+	display: none;
+}
+
+main article li .producto .contenido button{
+	display: block;
+	margin: 0 auto;
+	background-color: #f0f0e8;
+	border: none;
+	padding: 8px;
+	color: #60615b;
+}
+main article li .producto .contenido button i{
+	margin-right: 4px;
+}
+main article li .producto .contenido button span{
+	font-size: 16px;
+}
+
+
+main article .articulos .producto .contenido:hover{
+	background-color: #f19e24;
+}
+main article .articulos .producto .contenido:hover img:not( .destacada ){
+	opacity: 0;
+}
+main article .articulos .producto .contenido:hover .precio{
+	display: none;
+}
+main article .articulos .producto .contenido:hover .titulo{
+	display: block;
+	color: #ffffff;
+}
+main article .articulos .producto .contenido:hover button{
+	color: #f19e24;
+	background-color: #ffffff;
+}
+
+
+main article li .producto .botonera{
+	display: flex;
+	border-top: 1px solid #f0f0e8;
+}
+main article li .producto .botonera button{
+	width: 50%;
+	background: none;
+	border: none;
+	color: #60615b;
+	padding: 8px;	
+}
+
+main article section.mas-articulos{
+	margin: 16px 8px;
+}
+
+main article section.mas-articulos nav{
+	background-color: #40403e;
+	margin: 0 0 24px 0;
+}
+
+main article section.mas-articulos nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+main article section.mas-articulos nav ul li{
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 12px;
+	color: #b9b8b4;
+}
+
+main article section.mas-articulos nav ul li.activa{
+	background-color: #ff980d;
+	color: #ffffff;
+}
+
+main article section.mas-articulos .productos .columna{
+	width: 50%;
+}
+
+main article section.mas-articulos .productos .columna:nth-of-type( odd ) .producto{
+	margin: 0 8px 16px 0px;
+}
+main article section.mas-articulos .productos .columna:nth-of-type( even ) .producto{
+	margin: 0 0px 16px 8px;
+}
+
+main article section.mas-articulos .productos .producto{
+	padding-bottom: 0;
+}
+
+main article section.mas-articulos .productos .producto .titulo{
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 16px 0;
+}
+
+main article section.mas-articulos .productos .producto button{
+	width: auto;
+}
+
+@media all and (min-width: 640px){
+	main article h2{
+		margin-left: 16px;
+	}
+	main article.columna{
+		width: 75%;
+	}
+	main article li.columna{
+		width: 50%;
+	}
+	main article li .producto{
+		margin: 0 0 16px 16px;	
+	}
+	main article li .producto .botonera button{
+		font-size: 12px;
+	}	
+	main article section.mas-articulos{
+		margin: 24px 0 24px 16px;
+	}
+	main article section.mas-articulos nav{
+		border-bottom: 1px solid #ff980d;
+	}
+	main article section.mas-articulos .productos .producto .titulo{
+		font-size: 15px;
+	}
+
+	main article section.mas-articulos .productos .producto:hover button{
+		color: #ffffff !important;
+		background-color: #ff980d;
+	}
+
+}
+@media all and  (min-width: 1024px ){
+	main article h2{
+		margin-left: 24px;
+	}
+	main article section.articulos .contenedor{
+		justify-content: end;
+	}
+	main article li.columna{
+		width: 33%;
+	}
+	main article section.mas-articulos{
+		margin: 24px 0 24px 24px;
+	}
+	main article section.mas-articulos nav ul li{
+		font-size: 14px;
+	}
+
+	main article section.mas-articulos .productos .columna{
+		width: 25%;
+	}
+	main article section.mas-articulos .productos .columna:nth-of-type( odd ) .producto,
+	main article section.mas-articulos .productos .columna:nth-of-type( even ) .producto{
+		margin: 0 8px 16px 8px;
+	}
+	main article section.mas-articulos .productos .columna:first-of-type .producto{
+		margin: 0 8px 16px 0;
+	}
+	main article section.mas-articulos .productos .columna:last-of-type .producto{
+		margin: 0 0 16px 8px;
+	}
+	main article section.mas-articulos .productos .producto{
+		padding-bottom: 16px;
+	}
+	main article section.mas-articulos .productos .producto img{
+		height: 175px;
+	}
+	main article section.mas-articulos .productos .producto .titulo{
+		font-size: 16px;
+	}
+	main article section.mas-articulos .productos .producto button{
+		width: auto;
+	}
+}
+
